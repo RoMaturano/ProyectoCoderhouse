@@ -1,0 +1,16 @@
+{% extends 'AppMaturano/padre.html' %}
+
+{%load static%}
+{% block contenidoQueCambia%}
+
+    nombre: {{nombre}}
+    <br>
+    precio: 
+    {%for precios in precio%}
+
+    {{precios.precio}}
+    <br>
+
+    {%endfor%}
+
+{% endblock %}
